@@ -4,6 +4,51 @@ Painel financeiro para uma loja de roupas real. Ele substituiu o caderno de anot
 
 Funciona na rede Wi-Fi da loja. Um computador roda o servidor, e os celulares e outros computadores acessam pelo navegador, sem instalar nada.
 
+![Dashboard do painel](docs/img/dashboard.png)
+
+## Telas
+
+> Todas as imagens usam dados fictícios.
+
+### Dashboard completo
+
+Indicadores do período, planejamento financeiro, fluxo de caixa, meta do mês, margem de lucro, formas de pagamento e rankings de clientes.
+
+<details>
+<summary>Ver o dashboard inteiro</summary>
+
+![Dashboard completo com todos os gráficos](docs/img/dashboard-completo.png)
+
+</details>
+
+### Fiado
+
+Parcelas a receber por cliente, com vencimentos de hoje, da semana e do mês, além das atrasadas.
+
+![Tela de fiado](docs/img/fiado.png)
+
+### Lançamentos
+
+Histórico de vendas, saídas e pagamentos, com filtros e exportação para Excel (CSV).
+
+![Tela de lançamentos](docs/img/lancamentos.png)
+
+### Contas a pagar
+
+![Tela de contas a pagar](docs/img/pagar.png)
+
+### No celular
+
+<p>
+  <img src="docs/img/celular-dashboard.png" alt="Dashboard no celular" width="260">
+  &nbsp;
+  <img src="docs/img/celular-fiado.png" alt="Fiado no celular" width="260">
+</p>
+
+### Login
+
+![Tela de login](docs/img/login.png)
+
 ## Funcionalidades
 
 - **Lançamentos**: vendas (dinheiro, Pix, cartão), saídas por categoria e vales de funcionárias.
