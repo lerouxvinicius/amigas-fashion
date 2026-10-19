@@ -1,0 +1,1259 @@
+{
+ "app": "amigas-fashion",
+ "versao": 1,
+ "exportadoEm": "2026-10-15T12:00:00Z",
+ "config": {
+  "saldoInicial": 0,
+  "saldoData": "",
+  "metaMensal": 0
+ },
+ "lancamentos": [
+  {
+   "id": "ex-2026-07-23-01",
+   "tipo": "venda",
+   "data": "2026-07-23",
+   "valor": 35,
+   "descricao": "",
+   "forma": "Dinheiro",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Paula (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-02",
+   "tipo": "venda",
+   "data": "2026-07-23",
+   "valor": 50,
+   "descricao": "",
+   "forma": "Pix",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Renata (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-03",
+   "tipo": "saida",
+   "data": "2026-07-23",
+   "valor": 65,
+   "descricao": "Sacolas para embalagem",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Compra de mercadoria",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-04",
+   "tipo": "saida",
+   "data": "2026-07-23",
+   "valor": 165,
+   "descricao": "2 calças (fornecedor)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Compra de mercadoria",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-05",
+   "tipo": "saida",
+   "data": "2026-07-23",
+   "valor": 395,
+   "descricao": "1ª parcela de 6x (fornecedor)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Compra de mercadoria",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-06",
+   "tipo": "fiado_pago",
+   "data": "2026-07-23",
+   "valor": 40,
+   "descricao": "",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Simone (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-23-07",
+   "tipo": "fiado_pago",
+   "data": "2026-07-23",
+   "valor": 75,
+   "descricao": "",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Tatiana (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-27-08",
+   "tipo": "venda",
+   "data": "2026-07-27",
+   "valor": 140,
+   "descricao": "",
+   "forma": "Dinheiro",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Úrsula (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-27-09",
+   "tipo": "venda",
+   "data": "2026-07-27",
+   "valor": 60,
+   "descricao": "",
+   "forma": "Cartão",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Vanessa (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-27-10",
+   "tipo": "saida",
+   "data": "2026-07-27",
+   "valor": 105,
+   "descricao": "Vale funcionária",
+   "forma": "Dinheiro",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Vale / funcionária",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-27-11",
+   "tipo": "fiado_pago",
+   "data": "2026-07-27",
+   "valor": 130,
+   "descricao": "Roupas infantis",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Viviane (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-07-27-12",
+   "tipo": "fiado_pago",
+   "data": "2026-07-27",
+   "valor": 145,
+   "descricao": "",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "cliente": "Yara (ex.)",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-02-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-02",
+   "valor": 300,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-02-s",
+   "tipo": "saida",
+   "data": "2026-09-02",
+   "valor": 2.57,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-02-v",
+   "tipo": "venda",
+   "data": "2026-09-02",
+   "valor": 70,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-03-s",
+   "tipo": "saida",
+   "data": "2026-09-03",
+   "valor": 2.18,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-03-v",
+   "tipo": "venda",
+   "data": "2026-09-03",
+   "valor": 75,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-04-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-04",
+   "valor": 225,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-04-s",
+   "tipo": "saida",
+   "data": "2026-09-04",
+   "valor": 25,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-04-v",
+   "tipo": "venda",
+   "data": "2026-09-04",
+   "valor": 65,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-05-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-05",
+   "valor": 285,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-05-s",
+   "tipo": "saida",
+   "data": "2026-09-05",
+   "valor": 125,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-05-v",
+   "tipo": "venda",
+   "data": "2026-09-05",
+   "valor": 505,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-08-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-08",
+   "valor": 40,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-08-s",
+   "tipo": "saida",
+   "data": "2026-09-08",
+   "valor": 560,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-08-v",
+   "tipo": "venda",
+   "data": "2026-09-08",
+   "valor": 390,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-09-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-09",
+   "valor": 130,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-09-s",
+   "tipo": "saida",
+   "data": "2026-09-09",
+   "valor": 1785,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-09-v",
+   "tipo": "venda",
+   "data": "2026-09-09",
+   "valor": 810,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-10-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-10",
+   "valor": 170,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-10-v",
+   "tipo": "venda",
+   "data": "2026-09-10",
+   "valor": 255,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-11-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-11",
+   "valor": 45,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-11-v",
+   "tipo": "venda",
+   "data": "2026-09-11",
+   "valor": 210,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-12-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-12",
+   "valor": 645,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-12-s",
+   "tipo": "saida",
+   "data": "2026-09-12",
+   "valor": 490,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-12-v",
+   "tipo": "venda",
+   "data": "2026-09-12",
+   "valor": 165,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-14-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-14",
+   "valor": 350,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-14-v",
+   "tipo": "venda",
+   "data": "2026-09-14",
+   "valor": 75,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-15-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-15",
+   "valor": 305,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-15-s",
+   "tipo": "saida",
+   "data": "2026-09-15",
+   "valor": 160,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-15-v",
+   "tipo": "venda",
+   "data": "2026-09-15",
+   "valor": 240,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-16-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-16",
+   "valor": 110,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-16-v",
+   "tipo": "venda",
+   "data": "2026-09-16",
+   "valor": 130,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-17-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-17",
+   "valor": 540,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-17-v",
+   "tipo": "venda",
+   "data": "2026-09-17",
+   "valor": 55,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-18-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-18",
+   "valor": 100,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-18-s",
+   "tipo": "saida",
+   "data": "2026-09-18",
+   "valor": 25,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-18-v",
+   "tipo": "venda",
+   "data": "2026-09-18",
+   "valor": 85,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-19-s",
+   "tipo": "saida",
+   "data": "2026-09-19",
+   "valor": 40,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-19-v",
+   "tipo": "venda",
+   "data": "2026-09-19",
+   "valor": 115,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-21-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-21",
+   "valor": 65,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-21-s",
+   "tipo": "saida",
+   "data": "2026-09-21",
+   "valor": 1115,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-21-v",
+   "tipo": "venda",
+   "data": "2026-09-21",
+   "valor": 455,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-22-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-22",
+   "valor": 70,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-22-v",
+   "tipo": "venda",
+   "data": "2026-09-22",
+   "valor": 60,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-23-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-23",
+   "valor": 1175,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-23-s",
+   "tipo": "saida",
+   "data": "2026-09-23",
+   "valor": 130,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-23-v",
+   "tipo": "venda",
+   "data": "2026-09-23",
+   "valor": 75,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-24-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-24",
+   "valor": 715,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-24-s",
+   "tipo": "saida",
+   "data": "2026-09-24",
+   "valor": 170,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-24-v",
+   "tipo": "venda",
+   "data": "2026-09-24",
+   "valor": 340,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-25-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-25",
+   "valor": 820,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-25-s",
+   "tipo": "saida",
+   "data": "2026-09-25",
+   "valor": 650,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-25-v",
+   "tipo": "venda",
+   "data": "2026-09-25",
+   "valor": 510,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-26-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-26",
+   "valor": 345,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-26-s",
+   "tipo": "saida",
+   "data": "2026-09-26",
+   "valor": 3.92,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-26-v",
+   "tipo": "venda",
+   "data": "2026-09-26",
+   "valor": 125,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-28-s",
+   "tipo": "saida",
+   "data": "2026-09-28",
+   "valor": 310,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-29-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-29",
+   "valor": 95,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-29-s",
+   "tipo": "saida",
+   "data": "2026-09-29",
+   "valor": 335,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-29-v",
+   "tipo": "venda",
+   "data": "2026-09-29",
+   "valor": 685,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-30-f",
+   "tipo": "fiado_pago",
+   "data": "2026-09-30",
+   "valor": 440,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-30-s",
+   "tipo": "saida",
+   "data": "2026-09-30",
+   "valor": 1880,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "categoria": "Outros",
+   "exemplo": true
+  },
+  {
+   "id": "ex-2026-09-30-v",
+   "tipo": "venda",
+   "data": "2026-09-30",
+   "valor": 1960,
+   "descricao": "Total do dia (exemplo)",
+   "forma": "",
+   "criadoEm": "2026-10-15T12:00:00Z",
+   "exemplo": true
+  },
+  {
+   "id": "ex-pag-01-1",
+   "tipo": "fiado_pago",
+   "data": "2026-08-10",
+   "valor": 100.0,
+   "cliente": "Ana (ex.)",
+   "descricao": "Parcela 1/3",
+   "forma": "Pix",
+   "fiadoId": "ex-fiado-01",
+   "parcelaN": 1,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-pag-01-2",
+   "tipo": "fiado_pago",
+   "data": "2026-09-10",
+   "valor": 100.0,
+   "cliente": "Ana (ex.)",
+   "descricao": "Parcela 2/3",
+   "forma": "Pix",
+   "fiadoId": "ex-fiado-01",
+   "parcelaN": 2,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-pag-02-1",
+   "tipo": "fiado_pago",
+   "data": "2026-09-06",
+   "valor": 120.0,
+   "cliente": "Bruna (ex.)",
+   "descricao": "Parcela 1/2",
+   "forma": "Pix",
+   "fiadoId": "ex-fiado-02",
+   "parcelaN": 1,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-pag-03-1",
+   "tipo": "fiado_pago",
+   "data": "2026-09-20",
+   "valor": 150.0,
+   "cliente": "Carla (ex.)",
+   "descricao": "Parcela 1/3",
+   "forma": "Pix",
+   "fiadoId": "ex-fiado-03",
+   "parcelaN": 1,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-pag-13-1",
+   "tipo": "fiado_pago",
+   "data": "2026-08-21",
+   "valor": 70.0,
+   "cliente": "Mônica (ex.)",
+   "descricao": "Parcela 1/3",
+   "forma": "Pix",
+   "fiadoId": "ex-fiado-13",
+   "parcelaN": 1,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-pag-elaine-parcial",
+   "tipo": "fiado_pago",
+   "data": "2026-10-12",
+   "valor": 100,
+   "cliente": "Elaine (ex.)",
+   "descricao": "Parcela 1/4 (parcial)",
+   "forma": "Dinheiro",
+   "fiadoId": "ex-fiado-05",
+   "parcelaN": 1,
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  }
+ ],
+ "fiados": [
+  {
+   "id": "ex-fiado-01",
+   "cliente": "Ana (ex.)",
+   "data": "2026-07-10",
+   "valor": 300,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-08-10",
+     "valor": 100.0,
+     "pago": 100.0,
+     "quitadaEm": "2026-08-10"
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-09-10",
+     "valor": 100.0,
+     "pago": 100.0,
+     "quitadaEm": "2026-09-10"
+    },
+    {
+     "n": 3,
+     "vencimento": "2026-10-10",
+     "valor": 100.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-02",
+   "cliente": "Bruna (ex.)",
+   "data": "2026-08-05",
+   "valor": 240,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-09-05",
+     "valor": 120.0,
+     "pago": 120.0,
+     "quitadaEm": "2026-09-06"
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-10-05",
+     "valor": 120.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-03",
+   "cliente": "Carla (ex.)",
+   "data": "2026-08-20",
+   "valor": 450,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-09-20",
+     "valor": 150.0,
+     "pago": 150.0,
+     "quitadaEm": "2026-09-20"
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-10-20",
+     "valor": 150.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 3,
+     "vencimento": "2026-11-20",
+     "valor": 150.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-04",
+   "cliente": "Daniela (ex.)",
+   "data": "2026-09-02",
+   "valor": 180,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-02",
+     "valor": 180.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-05",
+   "cliente": "Elaine (ex.)",
+   "data": "2026-09-12",
+   "valor": 600,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-12",
+     "valor": 150.0,
+     "pago": 100,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-11-12",
+     "valor": 150.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 3,
+     "vencimento": "2026-12-12",
+     "valor": 150.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 4,
+     "vencimento": "2027-01-12",
+     "valor": 150.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-06",
+   "cliente": "Fernanda (ex.)",
+   "data": "2026-09-15",
+   "valor": 120,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-15",
+     "valor": 120.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-07",
+   "cliente": "Gabriela (ex.)",
+   "data": "2026-09-16",
+   "valor": 200,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-16",
+     "valor": 100.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-11-16",
+     "valor": 100.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-08",
+   "cliente": "Helena (ex.)",
+   "data": "2026-09-25",
+   "valor": 350,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-17",
+     "valor": 175.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-11-17",
+     "valor": 175.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-09",
+   "cliente": "Isabel (ex.)",
+   "data": "2026-09-28",
+   "valor": 90,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-18",
+     "valor": 90.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-10",
+   "cliente": "Juliana (ex.)",
+   "data": "2026-10-01",
+   "valor": 520,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-25",
+     "valor": 130.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-11-25",
+     "valor": 130.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 3,
+     "vencimento": "2026-12-25",
+     "valor": 130.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 4,
+     "vencimento": "2027-01-25",
+     "valor": 130.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-11",
+   "cliente": "Karen (ex.)",
+   "data": "2026-10-03",
+   "valor": 160,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-30",
+     "valor": 80.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-11-30",
+     "valor": 80.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-12",
+   "cliente": "Larissa (ex.)",
+   "data": "2026-10-08",
+   "valor": 280,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-11-08",
+     "valor": 140.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-12-08",
+     "valor": 140.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-13",
+   "cliente": "Mônica (ex.)",
+   "data": "2026-07-20",
+   "valor": 210,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-08-20",
+     "valor": 70.0,
+     "pago": 70.0,
+     "quitadaEm": "2026-08-21"
+    },
+    {
+     "n": 2,
+     "vencimento": "2026-09-20",
+     "valor": 70.0,
+     "pago": 0,
+     "quitadaEm": ""
+    },
+    {
+     "n": 3,
+     "vencimento": "2026-10-20",
+     "valor": 70.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  },
+  {
+   "id": "ex-fiado-14",
+   "cliente": "Natália (ex.)",
+   "data": "2026-10-10",
+   "valor": 75,
+   "descricao": "Exemplo",
+   "parcelas": [
+    {
+     "n": 1,
+     "vencimento": "2026-10-22",
+     "valor": 75.0,
+     "pago": 0,
+     "quitadaEm": ""
+    }
+   ],
+   "exemplo": true,
+   "criadoEm": "2026-10-15T12:00:00Z"
+  }
+ ],
+ "contas": [
+  {
+   "id": "conta-mercado-pago",
+   "nome": "Mercado Pago",
+   "loja": "Masculino",
+   "maquininha": false,
+   "saldoInicial": 0,
+   "dataInicial": "2026-10-17"
+  },
+  {
+   "id": "conta-neon",
+   "nome": "NEON",
+   "loja": "Feminino",
+   "maquininha": false,
+   "saldoInicial": 0,
+   "dataInicial": "2026-10-17"
+  },
+  {
+   "id": "conta-infinity-pay",
+   "nome": "Infinity Pay",
+   "loja": "",
+   "maquininha": true,
+   "saldoInicial": 0,
+   "dataInicial": "2026-10-17"
+  }
+ ]
+}

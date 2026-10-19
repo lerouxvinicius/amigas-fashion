@@ -1,0 +1,57 @@
+PAINEL AMIGAS FASHION - COMO USAR NA LOJA
+==========================================
+
+1) INSTALAR O PYTHON (uma vez só)
+   - Baixe em https://www.python.org/downloads/ (versão 3.8 ou mais nova).
+   - No Windows, marque "Add Python to PATH" na primeira tela do instalador.
+
+2) LIGAR O PAINEL
+   - Windows: dê dois cliques em "iniciar-windows.bat".
+   - Mac/Linux: rode ./iniciar-mac-linux.sh no Terminal.
+   - Na primeira vez ele pede para criar o usuário e a senha de acesso.
+   - O Windows pode perguntar se libera o Python no firewall:
+     marque "Redes privadas" e clique em Permitir (sem isso o celular não acessa).
+   - Deixe a janela aberta enquanto a loja estiver usando o painel.
+
+3) ABRIR
+   - Neste computador: http://localhost:8080
+   - Celular ou outro computador NA MESMA REDE WI-FI: use o endereço que aparece
+     na janela, algo como http://192.168.0.15:8080
+   - Dica: no celular, abra o endereço e use "Adicionar à tela inicial"
+     para ter um ícone de app.
+
+4) OUTRAS AÇÕES
+   - Criar outro usuário ou trocar senha:  python servidor.py --criar-usuario
+   - Importar um backup baixado do painel: python servidor.py --importar arquivo.json
+   - Usar outra porta:                     python servidor.py --porta 9000
+
+5) ONDE FICAM OS DADOS (E COMO NADA SE PERDE)
+   - Banco de dados: arquivo amigas.db (SQLite), nesta pasta. Cada gravação vai
+     para o disco antes de o painel confirmar (modo WAL + sincronização total).
+   - Histórico permanente: a tabela "eventos" guarda o antes e o depois de TODA
+     alteração e exclusão, com usuário e horário. Ela nunca é apagada.
+   - Lixeira: o que for excluído no painel pode ser restaurado em Ajustes.
+   - Cópias diárias: na pasta "backups", um .db e um .json por dia (60 dias).
+   - Cópia fora do computador (RECOMENDADO): inicie com
+         python servidor.py --copia-para "D:\Backup Amigas"
+     usando um pendrive ou a pasta do Google Drive / OneDrive. Assim, mesmo se
+     o computador estragar, os dados continuam salvos.
+   - Ao iniciar, o servidor verifica a integridade do banco. Se acusar problema,
+     copie a cópia mais recente de "backups" por cima do amigas.db.
+
+   Para Machine Learning / análise:
+   - No painel: Ajustes > "Exportar base para Machine Learning (CSV)".
+   - No banco: visões vw_lancamentos, vw_parcelas e vw_contas_pagar, que podem
+     ser lidas pelo Python (pandas.read_sql), Power BI ou DB Browser for SQLite.
+
+6) ACESSAR DE FORA DA LOJA (opcional)
+   - O endereço 192.168... só funciona no Wi-Fi da loja.
+   - Para acessar de casa com segurança, instale o Tailscale (gratuito) no
+     computador da loja e no seu celular, e abra http://NOME-DO-PC:8080.
+   - Não abra a porta 8080 no roteador para a internet.
+
+Observações
+   - O computador da loja precisa ficar ligado para os outros aparelhos acessarem.
+   - O arquivo dados-iniciais.json traz lançamentos e clientes de EXEMPLO
+     (fictícios, marcados "(ex.)"), ainda sem WhatsApp. Ele só é carregado quando o banco está
+     vazio. Use o botão "Remover exemplos" no painel para apagá-los.

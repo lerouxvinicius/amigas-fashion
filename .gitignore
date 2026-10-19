@@ -1,0 +1,15 @@
+# Dados reais da loja: nunca vão para o GitHub
+privado/
+amigas.db
+amigas.db-*
+*.db
+backups/
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
