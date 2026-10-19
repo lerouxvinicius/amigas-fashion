@@ -68,17 +68,38 @@ Histórico de vendas, saídas e pagamentos, com filtros e exportação para Exce
 - **Banco de dados:** SQLite.
 - **Gráficos:** [Chart.js](https://www.chartjs.org/).
 
-## Como rodar
+## Como testar
 
-Requer Python 3.8 ou mais novo.
+Requer [Python](https://www.python.org/downloads/) 3.8 ou mais novo. Não há nada para instalar com `pip`.
+
+**1. Baixe o projeto**, de um dos dois jeitos:
+
+- Com Git: `git clone https://github.com/lerouxvinicius/amigas-fashion.git`
+- Sem Git: clique no botão verde **Code → Download ZIP** nesta página e extraia o arquivo.
+
+**2. Abra o terminal dentro da pasta do projeto:**
 
 ```bash
-python servidor.py
+cd amigas-fashion
 ```
 
-Na primeira execução, o servidor pede para criar um usuário e uma senha. Depois, abra http://localhost:8080.
+> No Windows, outro jeito é abrir a pasta extraída no Explorador de Arquivos, clicar na barra de endereço, digitar `cmd` e apertar Enter.
 
-Atalhos: `iniciar-windows.bat` (Windows) e `iniciar-mac-linux.sh` (Mac/Linux). O passo a passo completo para a loja está em [LEIA-ME.txt](LEIA-ME.txt).
+**3. Inicie em modo demonstração**, com dados fictícios:
+
+```bash
+python servidor.py --demo
+```
+
+> No Windows, se aparecer "python não é reconhecido", use `py servidor.py --demo`. Digite o comando direto no terminal, e não dentro do Python (o prompt `>>>`). Se você estiver no `>>>`, digite `exit()` para sair.
+
+**4. Abra http://localhost:8080** e entre com o usuário `demo` e a senha `demo123`.
+
+Para desligar, aperte `Ctrl+C` no terminal.
+
+### Uso na loja (dados reais)
+
+Rode sem `--demo`: `python servidor.py`. Na primeira execução, o servidor pede para criar o usuário e a senha. O modo demo usa um banco separado (`demo.db`) e nunca mistura dados com o banco real. Atalhos: `iniciar-windows.bat` (Windows) e `iniciar-mac-linux.sh` (Mac/Linux). O passo a passo completo para a loja está em [LEIA-ME.txt](LEIA-ME.txt).
 
 ## Dados de exemplo
 

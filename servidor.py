@@ -7,6 +7,7 @@ computador e de celulares/computadores na mesma rede Wi-Fi, com usuário e senha
 Usa só a biblioteca padrão do Python 3.8+ (nada para instalar).
 
   python servidor.py                      inicia (porta 8080)
+  python servidor.py --demo               demonstração (dados fictícios, login demo / demo123)
   python servidor.py --porta 9000         outra porta
   python servidor.py --criar-usuario      cria ou troca a senha de um usuário
   python servidor.py --importar ARQ.json  importa um backup baixado do painel
@@ -357,9 +358,14 @@ def main():
     ap.add_argument("--criar-usuario", action="store_true")
     ap.add_argument("--importar", metavar="BACKUP.json")
     ap.add_argument("--copia-para", metavar="PASTA", help="pasta extra para as cópias diárias (pendrive, Google Drive...)")
+    ap.add_argument("--demo", action="store_true",
+                    help="modo demonstração: banco separado com dados fictícios e login demo / demo123")
     args = ap.parse_args()
 
-    global COPIA_EXTRA
+    global COPIA_EXTRA, BANCO, PASTA_BACKUP
+    if args.demo:
+        BANCO = os.path.join(PASTA, "demo.db")
+        PASTA_BACKUP = os.path.join(PASTA, "backups", "demo")
     COPIA_EXTRA = args.copia_para
     DB = conectar()
     ok = DB.execute("PRAGMA integrity_check").fetchone()[0]
@@ -371,6 +377,10 @@ def main():
     if args.importar:
         return importar(args.importar)
 
+    if args.demo and not DB.execute("SELECT 1 FROM usuarios").fetchone():
+        sal = secrets.token_hex(16)
+        DB.execute("INSERT INTO usuarios VALUES (?,?,?)", ("demo", sal, hash_senha("demo123", sal)))
+        DB.commit()
     if not DB.execute("SELECT 1 FROM usuarios").fetchone():
         print("Primeiro uso: crie o usuário que vai entrar no painel.")
         criar_usuario()
@@ -385,6 +395,8 @@ def main():
     print(f"  Neste computador:            http://localhost:{args.porta}")
     print(f"  Celular / outro computador:  http://{ip}:{args.porta}  (mesma rede Wi-Fi)")
     print("  Cópias diárias em:", PASTA_BACKUP + (f"  e  {COPIA_EXTRA}" if COPIA_EXTRA else ""))
+    if args.demo:
+        print("  MODO DEMONSTRAÇÃO: dados fictícios. Login: demo  /  senha: demo123")
     print("  Para desligar, feche esta janela ou aperte Ctrl+C.\n")
     try:
         srv.serve_forever()
