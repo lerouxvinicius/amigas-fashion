@@ -1,6 +1,6 @@
 # Painel Amigas Fashion
 
-Painel financeiro para uma loja de roupas real. Ele substituiu o caderno de anotações: registra vendas, saídas, vendas no fiado parceladas e contas a pagar, e mostra gráficos com a situação do caixa.
+Sistema de gestão para uma loja de roupas real, com duas lojas (feminina e masculina). Ele substituiu o caderno de anotações: tem PDV para vender no balcão, estoque com etiquetas, vendas no fiado parceladas, cadastro de clientes, contas a pagar, fechamento do mês e análises, além de gráficos com a situação do caixa.
 
 Funciona na rede Wi-Fi da loja. Um computador roda o servidor, e os celulares e outros computadores acessam pelo navegador, sem instalar nada.
 
@@ -21,11 +21,35 @@ Indicadores do período, planejamento financeiro, fluxo de caixa, meta do mês, 
 
 </details>
 
+### PDV (venda no balcão)
+
+Venda por nome da peça ou código da etiqueta, desconto, pagamento dividido em várias formas (dinheiro, Pix, débito, crédito, fiado, vale-troca) e baixa automática no estoque.
+
+![Tela do PDV](docs/img/pdv.png)
+
+### Estoque
+
+Peças com código de etiqueta por loja, custo, preço de venda, margem e valor parado. Gera etiqueta para imprimir e exporta para Excel.
+
+![Tela de estoque](docs/img/estoque.png)
+
 ### Fiado
 
 Parcelas a receber por cliente, com vencimentos de hoje, da semana e do mês, além das atrasadas.
 
 ![Tela de fiado](docs/img/fiado.png)
+
+### Clientes
+
+Cadastro com WhatsApp, número de compras, última compra e fiado em aberto.
+
+![Tela de clientes](docs/img/clientes.png)
+
+### Análises
+
+Clientes agrupadas por frequência e valor de compra (campeãs, fiéis, novas, esfriando, sumidas), para saber quem chamar de volta.
+
+![Tela de análises](docs/img/analises.png)
 
 ### Lançamentos
 
@@ -37,12 +61,18 @@ Histórico de vendas, saídas e pagamentos, com filtros e exportação para Exce
 
 ![Tela de contas a pagar](docs/img/pagar.png)
 
+### Ajustes e fechamento do mês
+
+Contas bancárias, metas por loja, backup e exportação, e o fechamento do mês com conferência.
+
+![Tela de ajustes](docs/img/config.png)
+
 ### No celular
 
 <p>
   <img src="docs/img/celular-dashboard.png" alt="Dashboard no celular" width="260">
   &nbsp;
-  <img src="docs/img/celular-fiado.png" alt="Fiado no celular" width="260">
+  <img src="docs/img/celular-pdv.png" alt="PDV no celular" width="260">
 </p>
 
 ### Login
@@ -51,12 +81,17 @@ Histórico de vendas, saídas e pagamentos, com filtros e exportação para Exce
 
 ## Funcionalidades
 
-- **Lançamentos**: vendas (dinheiro, Pix, cartão), saídas por categoria e vales de funcionárias.
-- **Fiado**: vendas parceladas por cliente, com controle de parcelas pagas, em aberto e atrasadas, e WhatsApp da cliente.
-- **Contas e lojas**: saldo por conta (Mercado Pago, banco digital, maquininha) e por loja (feminino/masculino).
-- **Contas a pagar** e **meta mensal**.
+- **PDV**: venda no balcão com carrinho, desconto, pagamento dividido em várias formas e vale-troca.
+- **Estoque**: código de etiqueta por loja, custo e preço, margem, movimentações (venda, devolução, perda, ajuste) e etiqueta para imprimir.
+- **Lançamentos**: vendas, saídas por categoria e vales de funcionárias.
+- **Fiado**: vendas parceladas por cliente, com controle de parcelas pagas, em aberto e atrasadas, risco de inadimplência e cobrança pelo WhatsApp.
+- **Clientes**: cadastro com WhatsApp e histórico de compras.
+- **Análises**: segmentação das clientes por frequência e valor de compra.
+- **Duas lojas**: filtros e metas separados para a loja feminina e a masculina.
+- **Contas e saldo**: saldo por conta (Mercado Pago, banco digital, maquininha) e por loja.
+- **Contas a pagar**, **meta mensal** e **fechamento do mês**.
 - **Gráficos e indicadores** do período, feitos com Chart.js.
-- **Login** com usuário e senha (senha com hash e sessão por cookie).
+- **Login** com usuário e senha (senha com hash PBKDF2 e sessão por cookie).
 - **Nada se perde**: banco SQLite em modo WAL, histórico de toda alteração e exclusão (tabela `eventos`), lixeira com restauração e backups diários (`.db` + `.json`) mantidos por 60 dias.
 - **Exportação para Machine Learning**: CSV pelo painel e visões SQL (`vw_lancamentos`, `vw_parcelas`, `vw_contas_pagar`) para pandas e Power BI.
 - Pode ser instalado na tela inicial do celular, como um app.
@@ -103,4 +138,4 @@ Rode sem `--demo`: `python servidor.py`. Na primeira execução, o servidor pede
 
 ## Dados de exemplo
 
-O arquivo `dados-iniciais.json` tem lançamentos e clientes **fictícios**, para demonstrar o painel. Ele só é carregado quando o banco está vazio. Os dados reais da loja não fazem parte deste repositório.
+O arquivo `dados-iniciais.json` tem lançamentos e clientes **fictícios**, para demonstrar o painel. Ele só é carregado quando o banco está vazio. O arquivo `dados-demo.json` acrescenta peças de estoque e contas a pagar fictícias, e só é usado no modo `--demo`. Os dados reais da loja não fazem parte deste repositório.

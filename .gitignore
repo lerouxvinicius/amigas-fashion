@@ -3,7 +3,10 @@ privado/
 amigas.db
 amigas.db-*
 *.db
+*.db-*
 backups/
+amigas-fashion-backup-*.json
+comprovante-*.png
 
 # Python
 __pycache__/

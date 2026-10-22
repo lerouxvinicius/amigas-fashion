@@ -42,7 +42,11 @@ from urllib.parse import parse_qs, unquote, urlparse
 PASTA = os.path.dirname(os.path.abspath(__file__))
 BANCO = os.path.join(PASTA, "amigas.db")
 PASTA_BACKUP = os.path.join(PASTA, "backups")
-COLECOES = {"lancamentos", "fiados", "clientes", "contas", "pagar", "lixeira", "config"}
+# Coleções de dados do painel (cada documento é guardado como JSON na tabela docs)
+COLECOES_DADOS = ("lancamentos", "fiados", "clientes", "contas", "pagar", "estoque", "movestoque",
+                  "fotos", "pdv", "cobrancas", "acordos", "reativacoes", "conciliacoes",
+                  "fechamentos", "auditoria")
+COLECOES = set(COLECOES_DADOS) | {"lixeira", "config", "backups"}
 ARQUIVOS = {"/": ("index.html", "text/html; charset=utf-8"),
             "/index.html": ("index.html", "text/html; charset=utf-8"),
             "/chart.umd.js": ("chart.umd.js", "application/javascript")}
@@ -139,7 +143,7 @@ def importar(caminho):
         sys.exit("Este arquivo não é um backup do painel Amigas Fashion.")
     n = 0
     with LOCK:
-        for col in ("lancamentos", "fiados", "clientes", "contas", "pagar"):
+        for col in COLECOES_DADOS:
             for d in pack.get(col, []):
                 d = dict(d)
                 doc_id = d.pop("id", None) or secrets.token_hex(8)
@@ -156,8 +160,8 @@ COPIA_EXTRA = None
 
 
 def exportar_json():
-    pack = {"app": "amigas-fashion", "versao": 2, "exportadoEm": time.strftime("%Y-%m-%dT%H:%M:%S")}
-    for col in ("lancamentos", "fiados", "clientes", "contas", "pagar", "lixeira"):
+    pack = {"app": "amigas-fashion", "versao": 3, "exportadoEm": time.strftime("%Y-%m-%dT%H:%M:%S")}
+    for col in COLECOES_DADOS + ("lixeira",):
         pack[col] = []
     with LOCK:
         for col, doc_id, data in DB.execute("SELECT col, id, data FROM docs"):
@@ -252,9 +256,9 @@ class Handler(BaseHTTPRequestHandler):
                 rev = revisao()
                 if rev == rev_cliente:
                     return self.responder(200, {"rev": rev, "unchanged": True})
-                saida = {"rev": rev, "lancamentos": [], "fiados": [], "clientes": [], "contas": [], "pagar": [], "lixeira": [], "config": []}
+                saida = {"rev": rev, **{col: [] for col in COLECOES}}
                 for col, doc_id, data in DB.execute("SELECT col, id, data FROM docs"):
-                    saida[col].append({"id": doc_id, **json.loads(data)})
+                    saida.setdefault(col, []).append({"id": doc_id, **json.loads(data)})
             return self.responder(200, saida)
         self.responder(404, {"erro": "não encontrado"})
 
@@ -387,6 +391,10 @@ def main():
     iniciais = os.path.join(PASTA, "dados-iniciais.json")
     if not DB.execute("SELECT 1 FROM docs").fetchone() and os.path.exists(iniciais):
         importar(iniciais)
+        # Estoque e contas a pagar fictícios: só na demonstração, nunca no banco da loja
+        extras_demo = os.path.join(PASTA, "dados-demo.json")
+        if args.demo and os.path.exists(extras_demo):
+            importar(extras_demo)
 
     threading.Thread(target=backup_diario, daemon=True).start()
     srv = ThreadingHTTPServer(("0.0.0.0", args.porta), Handler)
